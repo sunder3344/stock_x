@@ -114,7 +114,7 @@ int main(int argc, char *argv[]) {
             cJSON *volume = cJSON_GetObjectItemCaseSensitive(item, "volume");
             cJSON *amount = cJSON_GetObjectItemCaseSensitive(item, "amount");
 
-            printf("%-13s|%-13.2f|%-13.2f|%-13.2f|%-13.2f|%-16.2f|%-16.2f|%-16d|%-14d|\n", name->valuestring, current->valuedouble, percent->valuedouble, last_close->valuedouble, open->valuedouble, high->valuedouble, low->valuedouble, volume->valueint/100, amount->valueint/1000);
+            printf("%-13s|%-13.2f|%-13.2f|%-13.2f|%-13.2f|%-16.2f|%-16.2f|%-16d|%-14d|\n", name->valuestring, current->valuedouble, percent->valuedouble, last_close->valuedouble, open->valuedouble, high->valuedouble, low->valuedouble, volume->valueint/100, amount->valueint/10000);
         }
     }
 
